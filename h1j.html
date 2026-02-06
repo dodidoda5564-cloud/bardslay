@@ -1,0 +1,247 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bardsley English Medium Senior Secondary School, Katni</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,Arial}
+body{background:#000;color:#fff;overflow-x:hidden}
+
+/* ===== LOADER ===== */
+#loader{
+position:fixed;inset:0;background:#000;
+display:flex;align-items:center;justify-content:center;
+flex-direction:column;z-index:9999;
+transition:opacity 1s ease
+}
+#loader h1{
+font-size:2.6rem;
+background:linear-gradient(90deg,#ffd700,#ff8c00);
+-webkit-background-clip:text;color:transparent;
+animation:pulse 1.5s infinite
+}
+.load-bar{
+width:240px;height:6px;background:rgba(255,255,255,.15);
+border-radius:10px;overflow:hidden;margin-top:18px
+}
+.load-bar span{
+display:block;height:100%;width:0%;
+background:linear-gradient(90deg,#ffd700,#ff8c00);
+animation:load 2.5s forwards
+}
+@keyframes load{to{width:100%}}
+@keyframes pulse{50%{opacity:1}}
+
+/* ===== HERO ===== */
+.hero{
+height:100vh;position:relative;
+display:flex;align-items:center;justify-content:center;
+text-align:center
+}
+.hero video{
+position:absolute;inset:0;
+width:100%;height:100%;
+object-fit:cover;filter:brightness(.35)
+}
+.hero-content{
+position:relative;z-index:2;
+max-width:850px;padding:20px
+}
+.hero-content h1{
+font-size:3.6rem;
+background:linear-gradient(90deg,#ffd700,#ff8c00);
+-webkit-background-clip:text;color:transparent;
+animation:glow 3s infinite alternate
+}
+@keyframes glow{
+from{text-shadow:0 0 10px rgba(255,200,0,.4)}
+to{text-shadow:0 0 30px rgba(255,200,0,.9)}
+}
+.hero-content p{margin-top:18px;font-size:1.2rem;opacity:.85}
+
+/* ===== SECTIONS ===== */
+section{padding:100px 20px;text-align:center}
+h2{color:#ffd700;font-size:2.4rem;margin-bottom:20px}
+
+.text{
+max-width:950px;margin:auto;
+opacity:.85;line-height:1.9
+}
+
+.badges{
+display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:25px
+}
+.badge{
+padding:12px 22px;border-radius:30px;
+background:rgba(255,215,0,.15);
+border:1px solid rgba(255,215,0,.4)
+}
+
+.cards{
+margin-top:50px;display:flex;
+justify-content:center;flex-wrap:wrap;gap:25px
+}
+.card{
+width:300px;padding:30px;border-radius:22px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,215,0,.3);
+backdrop-filter:blur(14px);
+opacity:0;transform:translateY(60px);
+transition:all 1s ease
+}
+.card.show{opacity:1;transform:translateY(0)}
+.card:hover{transform:translateY(-12px)}
+
+/* ===== GALLERY ===== */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;margin-top:40px
+}
+.gallery div{
+height:160px;border-radius:18px;
+background:linear-gradient(135deg,#222,#111);
+border:1px solid rgba(255,215,0,.25)
+}
+
+/* ===== FOOTER ===== */
+footer{
+padding:40px;text-align:center;
+opacity:.6;border-top:1px solid rgba(255,215,0,.2)
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+<h1>Bardsley School</h1>
+<div class="load-bar"><span></span></div>
+<p style="opacity:.6;margin-top:10px">Loading School Information...</p>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-abstract-liquid-motion-9714/1080p.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+<h1>Bardsley English Medium Senior Secondary School</h1>
+<p>Katni • Excellence in Education Since 1964</p>
+
+<div class="badges">
+<div class="badge">Established: 1964</div>
+<div class="badge">Affiliated to CBSE</div>
+</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section>
+<h2>Welcome to Bardsley School</h2>
+<p class="text">
+The Bardsley English Medium Senior Secondary School, Katni was started in the year
+1964, with classes from K.G. to Class IV. Gradually, under the able and dedicated
+leadership of Mrs. Rachael Cooke, the founder of this institution, a beautiful
+school building consisting of a big hall, staff room, eight classrooms and a
+laboratory came up and the classes were upgraded up to Class VIII.
+</p>
+</section>
+
+<!-- HISTORY (SMOOTH STORY STYLE) -->
+<section>
+<h2>Our School History</h2>
+<p class="text">
+On 1st January 1988, Rev. Solomon Nelson took over charge as Principal from
+Miss C. P. Salve. In the year 1989, the school was upgraded to a High School.
+Again, during 1991–92, it achieved the status of a Higher Secondary School.
+<br><br>
+The school is now a full-fledged Senior Secondary School affiliated to the
+Central Board of Secondary Education (CBSE), New Delhi, from 1st April 1998.
+</p>
+</section>
+
+<!-- MANAGEMENT -->
+<section>
+<h2>School Management</h2>
+<p class="text">
+The School is managed by <strong>BECNIJD</strong> (Board of Education Church of North India
+Jabalpur Diocese). Previously, BECNIJD was known as NDBE.
+<br><br>
+At present, the Rt. Rev. Dr. P. C. Singh, Bishop of Jabalpur Diocese, is the Chairman
+of the School.
+<br><br>
+The School is a minority institution which takes <strong>no grant from the Government</strong>
+and depends entirely on the fees obtained from the pupils.
+</p>
+</section>
+
+<!-- ACADEMICS -->
+<section>
+<h2>Academics</h2>
+<div class="cards">
+<div class="card"><h3>Primary Section</h3><p>Strong foundation & values</p></div>
+<div class="card"><h3>Secondary Section</h3><p>Concept-based learning</p></div>
+<div class="card"><h3>Senior Secondary</h3><p>CBSE Curriculum</p></div>
+</div>
+</section>
+
+<!-- ADMISSIONS -->
+<section>
+<h2>Admissions</h2>
+<p class="text">
+Admissions are open to students from Kindergarten to Senior Secondary classes.
+The school follows CBSE norms and emphasizes discipline, academic excellence,
+and holistic development.
+</p>
+</section>
+
+<!-- GALLERY -->
+<section>
+<h2>Student Life & Campus</h2>
+<div class="gallery">
+<div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact Us</h2>
+<p class="text">
+Bardsley English Medium Senior Secondary School<br>
+Katni, Madhya Pradesh<br><br>
+📞 Phone: School Office<br>
+📧 Email: school@bardsley.edu.in
+</p>
+</section>
+
+<footer>
+© 2026 Bardsley English Medium Senior Secondary School, Katni
+</footer>
+
+<script>
+window.onload=()=>{
+setTimeout(()=>{
+loader.style.opacity="0";
+setTimeout(()=>loader.style.display="none",1000);
+},1800)
+};
+
+const cards=document.querySelectorAll(".card");
+window.addEventListener("scroll",()=>{
+cards.forEach(c=>{
+if(c.getBoundingClientRect().top < innerHeight-80){
+c.classList.add("show")
+}
+})
+});
+</script>
+
+<style>.cube{position:fixed;width:92px;height:92px;background:linear-gradient(135deg,#ffd700,#ff8c00);border-radius:18px;display:flex;align-items:center;justify-content:center;gap:10px;z-index:3;box-shadow:0 0 35px rgba(255,200,0,.6);animation:float 6s ease-in-out infinite,glow 3s ease-in-out infinite alternate}.c1{top:22%;left:5%}.c2{top:55%;right:6%;animation-delay:2s}.c3{bottom:14%;left:42%;animation-delay:4s}.eye{width:22px;height:22px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden}.pupil{width:10px;height:10px;background:#000;border-radius:50%;transition:.08s linear}.blink{animation:blink 4s infinite}.bubble{position:absolute;top:-42px;left:50%;transform:translateX(-50%);background:#111;color:#ffd700;padding:6px 12px;border-radius:12px;font-size:12px;white-space:nowrap;opacity:.85}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-25px)}}@keyframes glow{from{box-shadow:0 0 18px rgba(255,200,0,.5)}to{box-shadow:0 0 45px rgba(255,200,0,.95)}}@keyframes blink{0%,95%,100%{height:22px}97%{height:4px}}</style><div class="cube c1"><div class="bubble">Welcome to Bardsley School</div><div class="eye blink"><div class="pupil"></div></div><div class="eye blink"><div class="pupil"></div></div></div><div class="cube c2"><div class="eye blink"><div class="pupil"></div></div><div class="eye blink"><div class="pupil"></div></div></div><div class="cube c3"><div class="eye blink"><div class="pupil"></div></div><div class="eye blink"><div class="pupil"></div></div></div><script>const pupils=document.querySelectorAll(".pupil"),cubes=document.querySelectorAll(".cube");function look(x,y){pupils.forEach(p=>{const r=p.parentElement.getBoundingClientRect(),dx=x-(r.left+r.width/2),dy=y-(r.top+r.height/2),a=Math.atan2(dy,dx),d=Math.min(6,Math.hypot(dx,dy)/18);p.style.transform=`translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px)`})}function avoid(x,y){cubes.forEach(c=>{const r=c.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=cx-x,dy=cy-y,dist=Math.hypot(dx,dy);if(dist<120){c.style.transform=`translate(${dx/8}px,${dy/8}px)`}})}document.addEventListener("mousemove",e=>{look(e.clientX,e.clientY);avoid(e.clientX,e.clientY)});document.addEventListener("touchmove",e=>e.touches[0]&&(look(e.touches[0].clientX,e.touches[0].clientY),avoid(e.touches[0].clientX,e.touches[0].clientY)));window.addEventListener("scroll",()=>{const y=window.scrollY*.02;cubes.forEach((c,i)=>c.style.marginTop=(y*(i+1))+"px")});</script>
+</body>
+</html>
